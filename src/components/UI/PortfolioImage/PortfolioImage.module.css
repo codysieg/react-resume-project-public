@@ -1,0 +1,23 @@
+.PortfolioImage {
+  background: url("../../../profile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 250px;
+  width: 250px;
+
+  border-radius: 50%;
+
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+
+  float: right;
+}
+
+.PortfolioImage:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

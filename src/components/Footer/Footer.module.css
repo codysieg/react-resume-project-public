@@ -1,0 +1,36 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    padding-bottom: 30px;
+}
+
+.FooterArrow {
+    position: relative;
+    top: -24px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+    background-color: #FFF;
+    transition: background-color 400ms ease-in;
+    -moz-transition: background-color 400ms ease-in;  
+    -webkit-transition: background-color 400ms ease-in; 
+    -ms-transition: background-color 400ms ease-in; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterArrow:hover {
+    background-color: #35658a;
+}
+
+.CopyRight {
+    color: grey;
+    font-size: 12px;
+    margin-top: 10px;
+}

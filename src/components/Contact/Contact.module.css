@@ -1,0 +1,37 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ContactWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.ContactMeDescription {
+    text-align: center;
+}
+
+.ButtonAndLoadingStates {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.CaptchaErrorBox {
+    border: 1px solid red;
+}
+
+.ContactNoFormLink {
+    padding-top: 10px;
+}

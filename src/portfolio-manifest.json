@@ -1,0 +1,86 @@
+{
+    "portfolio": {
+        "name": "Lorem Ipsum",
+        "location": "Lorem, Lorem Ipsum, Ipsum",
+        "phone_number": "123.123.1234",
+        "email_address": "abc123@gmail.com",
+        "link_1": {
+            "name": "home"
+        },
+        "link_2": {
+            "name": "about"
+        },
+        "link_3": {
+            "name": "resume"
+        },
+        "link_4": {
+            "name": "contact"
+        },
+        "landingpage_title": "Hi, I am Lorem Ipsum",
+        "landingpage_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius pharetra odio, sed pellentesque neque rutrum eleifend. Nulla dignissim lectus risus, at accumsan massa consectetur sed. Nam vulputate ex nec lacus dictum consequat. Phasellus quis nisi eu magna fringilla finibus. Donec ornare ullamcorper dolor vitae porttitor. Maecenas scelerisque elit in nibh iaculis gravida. Nulla eleifend odio non eros dapibus, in interdum augue ullamcorper. Phasellus malesuada hendrerit mi ac tempus. Nam eu nunc eget nisi elementum semper. Nullam consequat facilisis varius. Pellentesque eget lacus nec mi commodo faucibus.",
+        "about_me_description": "Vestibulum imperdiet leo vel ipsum faucibus, at tempus magna aliquet. Aliquam venenatis volutpat leo sed efficitur. Curabitur maximus suscipit nunc non sollicitudin. Donec feugiat quis libero in ullamcorper. Duis aliquam ipsum sit amet mattis aliquet. Etiam ultrices eu erat eu egestas. Pellentesque ullamcorper ullamcorper mauris, sit amet porttitor nulla molestie sed. Curabitur eget risus a justo cursus euismod. Sed varius, nisi id luctus pulvinar, sapien leo sodales dui, ac porttitor diam nisl at nulla. Mauris euismod auctor velit, sed eleifend odio cursus vel. Donec vitae velit massa. Nam molestie, magna id sollicitudin lacinia, magna augue tincidunt lectus, a faucibus ante nunc et massa. Duis vel risus varius, auctor nulla eget, egestas lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vitae justo tincidunt, condimentum lectus et, mattis lacus. Mauris dictum dignissim aliquam.",
+        "contact_me_description": "Curabitur sodales erat eget nisl congue ultricies. Quisque ut sollicitudin tellus. Aliquam tincidunt feugiat interdum. Quisque vitae eros euismod, tincidunt nisl vitae, accumsan metus. Nam purus lorem, pulvinar vitae semper sit amet, volutpat in dolor. Vestibulum ornare at leo in faucibus. Integer quis lorem a nunc elementum pretium ac eget metus. Ut dictum ultrices elit vel consequat.",
+        "display_email_form": true,
+        "copyright_info": "Copyright 2021 Lorem Ipsum",
+        "social_icon_links": {
+            "github": "https://github.com",
+            "linkedin": "https://www.linkedin.com",
+            "facebook": "https://www.facebook.com",
+            "instagram": "https://www.instagram.com"
+        },
+        "resume": {
+            "education": [
+                {
+                    "name": "Nam quid possumus facere melius",
+                    "position": "B.Sc. Lorem Ipsum",
+                    "timeframe": "Started School - Graudated School",
+                    "description": "Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Duo Reges: constructio interrete. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Quae in controversiam veniunt, de iis, si placet, disseramus. Ut enim consuetudo loquitur, id solum dicitur honestum, quod est populari fama gloriosum. Et adhuc quidem ita nobis progresso ratio est, ut ea duceretur omnis a prima commendatione naturae. Hoc positum in Phaedro a Platone probavit Epicurus sensitque in omni disputatione id fieri oportere. Rem unam praeclarissimam omnium maximeque laudandam, penitus viderent, quonam gaudio complerentur, cum tantopere eius adumbrata opinione laetentur? Quae diligentissime contra Aristonem dicuntur a Chryippo. Quis non odit sordidos, vanos, leves, futtiles? Ergo, si semel tristior effectus est, hilara vita amissa est? Sed haec ab Antiocho, familiari nostro, dicuntur multo melius et fortius, quam a Stasea dicebantur."
+                }
+            ],
+            "work": [
+                [
+                    {
+                        "name": "Praeteritis, inquit, gaudeo",
+                        "position": "Position - Cur iustitia laudatur",
+                        "timeframe": "Start Date - End Date",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etsi ea quidem, quae adhuc dixisti, quamvis ad aetatem recte isto modo dicerentur. Ut etiam contendant et elaborent, si efficere possint, ut aut non appareat corporis vitium aut quam minimum appareat? Idemque diviserunt naturam hominis in animum et corpus. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam. Tanti autem aderant vesicae et torminum morbi, ut nihil ad eorum magnitudinem posset accedere. Num igitur dubium est, quin, si in re ipsa nihil peccatur a superioribus, verbis illi commodius utantur? Nullum inveniri verbum potest quod magis idem declaret Latine, quod Graece, quam declarat voluptas. Duo Reges: constructio interrete. Idem iste, inquam, de voluptate quid sentit? Sunt enim prima elementa naturae, quibus auctis vírtutis quasi germen efficitur. Quo invento omnis ab eo quasi capite de summo bono et malo disputatio ducitur. Res enim fortasse verae, certe graves, non ita tractantur, ut debent, sed aliquanto minutius."
+                    },
+                    {
+                        "name": "",
+                        "position": "Position - Ratio quidem vestra sic cogit",
+                        "timeframe": "Start Date - End Date",
+                        "description": "Ergo illi intellegunt quid Epicurus dicat, ego non intellego? Hosne igitur laudas et hanc eorum, inquam, sententiam sequi nos censes oportere? Egone non intellego, quid sit don Graece, Latine voluptas? Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere. Pisone in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Sed vobis voluptatum perceptarum recordatio vitam beatam facit, et quidem corpore perceptarum. Itaque si aut requietem natura non quaereret aut eam posset alia quadam ratione consequi. Sed tamen intellego quid velit. Nihil minus, contraque illa hereditate dives ob eamque rem laetus. Nec enim ignoras his istud honestum non summum modo, sed etiam, ut tu vis, solum bonum videri. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis."
+                    }
+                ],
+                [
+                    {
+                        "name": "Aristidem non mortuum diligit",
+                        "position": "Position - dicuntur a Chryippo",
+                        "timeframe": "Start Date - End Date",
+                        "description": "Sed emolumenta communia esse dicuntur, recte autem facta et peccata non habentur communia. O magnam vim ingenii causamque iustam, cur nova existeret disciplina! Perge porro. Tum ego: Non mehercule, inquam, soleo temere contra Stoicos, non quo illis admodum assentiar, sed pudore impedior; Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Sed est forma eius disciplinae, sicut fere ceterarum, triplex: una pars est naturae, disserendi altera, vivendi tertia. Atque ut reliqui fures earum rerum, quas ceperunt, signa commutant, sic illi, ut sententiis nostris pro suis uterentur, nomina tamquam rerum notas mutaverunt. Graecum enim hunc versum nostis omnes-: Suavis laborum est praeteritorum memoria. Eademne, quae restincta siti? Et quidem illud ipsum non nimium probo et tantum patior, philosophum loqui de cupiditatibus finiendis."
+                    },
+                    {
+                        "name": "",
+                        "position": "Position - Duo Reges: constructio interrete",
+                        "timeframe": "Start Date - End Date",
+                        "description": "Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere. Minime vero, inquit ille, consentit. Itaque sensibus rationem adiunxit et ratione effecta sensus non reliquit. Nos vero, inquit ille; Stoici restant, ei quidem non unam aliquam aut alteram rem a nobis, sed totam ad se nostram philosophiam transtulerunt; Quodsi, ne quo incommodo afficiare, non relinques amicum, tamen, ne sine fructu alligatus sis, ut moriatur optabis. Et hunc idem dico, inquieta sed ad virtutes et ad vitia nihil interesse. Sit ista in Graecorum levitate perversitas, qui maledictis insectantur eos, a quibus de veritate dissentiunt. Saepe ab Aristotele, a Theophrasto mirabiliter est laudata per se ipsa rerum scientia; Nam diligi et carum esse iucundum est propterea, quia tutiorem vitam et voluptatem pleniorem efficit. Theophrasti igitur, inquit, tibi liber ille placet de beata vita?"
+                    }
+                ],
+                [
+                    {
+                        "name": "Constructio Interrete",
+                        "position": "Position - Vitae autem degendae",
+                        "timeframe": "Start Date - End Date",
+                        "description": "Huic ego, si negaret quicquam interesse ad beate vivendum quali uteretur victu, concederem, laudarem etiam; Quid ergo dubitamus, quin, si non dolere voluptas sit summa, non esse in voluptate dolor sit maximus? Et ille ridens: Video, inquit, quid agas; Eiuro, inquit adridens, iniquum, hac quidem de re; A villa enim, credo, et: Si ibi te esse scissem, ad te ipse venissem. Potius ergo illa dicantur: turpe esse, viri non esse debilitari dolore, frangi, succumbere. Atqui iste locus est, Piso, tibi etiam atque etiam confirmandus, inquam; Ergo infelix una molestia, fellx rursus, cum is ipse anulus in praecordiis piscis inventus est? Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Sed tamen enitar et, si minus multa mihi occurrent, non fugiam ista popularia. Quoniam, si dis placet, ab Epicuro loqui discimus."
+                    },
+                    {
+                        "name": "",
+                        "position": "Position - Summus dolor plures dies manere non potest",
+                        "timeframe": "Start Date - End Date",
+                        "description": "Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Hic Speusippus, hic Xenocrates, hic eius auditor Polemo, cuius illa ipsa sessio fuit, quam videmus. Sunt enim prima elementa naturae, quibus auctis vírtutis quasi germen efficitur. Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Theophrastus mediocriterne delectat, cum tractat locos ab Aristotele ante tractatos? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Deque his rebus satis multa in nostris de re publica libris sunt dicta a Laelio. De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Vestri haec verecundius, illi fortasse constantius."
+                    }
+                ]
+            ]
+        }
+    }
+}
