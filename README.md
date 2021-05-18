@@ -1,4 +1,4 @@
-# Demo of the Application
+# React Portfolio Page
 
 ![Image of The Portfolio Landing Page](./sharex-portfolio.png)
 
