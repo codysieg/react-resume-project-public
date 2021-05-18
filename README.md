@@ -1,6 +1,6 @@
 # Demo of the Application
 
-![Image of The Portfolio Landing Page](https://github.com/codysieg/react-resume-project-public/sharex-portfolio.png)
+![Image of The Portfolio Landing Page](./sharex-portfolio.png)
 
 You can view a live demonstration of the React Portfolio Website [here](https://react-resume-project-public.herokuapp.com/).
 
