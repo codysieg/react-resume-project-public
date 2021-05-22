@@ -5,15 +5,17 @@ import { portfolio } from "../../portfolio-manifest.json";
 import AboutMeTitleDescription from "../UI/AboutMeTitleDescription/AboutMeTitleDescription";
 import PortfolioImage from "../UI/PortfolioImage/PortfolioImage";
 
+import { Box } from "@material-ui/core";
+
 import classes from "./About.module.css";
 
 function About(props) {
   return (
-    <div className={props.mobileView ? classes.AboutMobileView : classes.AboutDesktopView} id="about">
-      <div className={classes.AboutPortfolio}>
+    <Box className={props.mobileView ? classes.AboutMobileView : classes.AboutDesktopView} id="about">
+      <Box className={classes.AboutPortfolio}>
           <PortfolioImage imageSource={portfolio.image} />
-      </div>
-      <div className={classes.AboutTitleDescription}>
+      </Box>
+      <Box className={classes.AboutTitleDescription}>
         <AboutMeTitleDescription
           title="About Me"
           body={portfolio.about_me_description}
@@ -27,8 +29,8 @@ function About(props) {
           emailAddress={portfolio.email_address}
           isMobile={props.mobileView}
         />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

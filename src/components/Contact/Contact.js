@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 import axios from "axios";
 
-import { Button, TextField, CircularProgress } from "@material-ui/core";
+import { Button, TextField, CircularProgress, Box} from "@material-ui/core";
 
 import MailIcon from "@material-ui/icons/Mail";
 import CheckIcon from "@material-ui/icons/Check";
@@ -173,16 +173,16 @@ function Contact() {
   };
 
   return (
-    <div className={classes.Contact} id="contact">
-      <div className={classes.ContactWrapper}>
+    <Box className={classes.Contact} id="contact">
+      <Box className={classes.ContactWrapper}>
         <MailIcon
           style={{
             fontSize: "80px",
           }}
         />
-        <div className={classes.ContactMeDescription}>
+        <Box className={classes.ContactMeDescription}>
           {portfolio.contact_me_description}
-        </div>
+        </Box>
         <form noValidate autoComplete="off">
           <TextField
             required
@@ -262,7 +262,7 @@ function Contact() {
             onExpired={() => onCaptchaChange(true)}
             sitekey="#yoursitekey"
           />
-          <div className={classes.ButtonAndLoadingStates}>
+          <Box className={classes.ButtonAndLoadingStates}>
             <Button
               onClick={handleFormSubmit}
               variant="outlined"
@@ -288,10 +288,10 @@ function Contact() {
                 fontSize="large"
               />
             ) : null}
-          </div>
+          </Box>
         </form>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

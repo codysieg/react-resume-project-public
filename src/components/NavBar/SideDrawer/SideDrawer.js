@@ -2,6 +2,8 @@ import React from "react";
 
 import styles from "./SideDrawer.module.css";
 
+import { Box } from "@material-ui/core";
+
 import Navigation from "../../Navigation/Navigation";
 
 const SideDrawer = (props) => {
@@ -18,13 +20,13 @@ const SideDrawer = (props) => {
     // document.body.style.paddingRight = '0'; /* Avoid width reflow */
   }
   return (
-    <div>
-      <div className={attachedStyles.join(" ")} onClick={props.closed}>
+    <Box>
+      <Box className={attachedStyles.join(" ")} onClick={props.closed}>
         <nav className={styles.MobileNavBar}>
           <Navigation />
         </nav>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

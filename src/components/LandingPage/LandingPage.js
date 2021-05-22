@@ -6,25 +6,24 @@ import { portfolio } from "../../portfolio-manifest.json";
 
 import styles from "./LandingPage.module.css";
 
-import { Card, Typography } from "@material-ui/core";
-import { CardContent } from "@material-ui/core";
+import { Card, CardContent, Typography, Box } from "@material-ui/core";
 
 import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
-  name: {
+  Name: {
     fontWeight: "600",
     paddingBottom: "30px",
   },
-  card: {
+  Card: {
     flex: '50% 0',
     backgroundColor: "rgb(0, 0, 0, 0.6)",
     color: "#FFF",
     borderRadius: "30px",
     verticalAlign: "middle",
     textAlign: "center",
-    paddingTop: "30px",
-    paddingBottom: "30px",
+    marginTop: "70px",
+    marginBottom: "70px",
     minWidth: "350px",
   }
 });
@@ -33,11 +32,11 @@ const LandingPage = (props) => {
   const classes = useStyles();
 
   return (
-    <div className={styles.LandingPage} id="home">
+    <Box className={styles.LandingPage} id="home">
       <ThemeProvider theme={props.theme}>
-        <Card className={classes.card}>
+        <Card className={classes.Card}>
           <CardContent>
-            <Typography variant="h1" align="center" className={classes.name}>
+            <Typography variant="h1" align="center" className={classes.Name}>
               {portfolio.landingpage_title}
             </Typography>
             <Typography
@@ -53,7 +52,7 @@ const LandingPage = (props) => {
           <SocialItems />
         </Card>
       </ThemeProvider>
-    </div>
+    </Box>
   );
 };
 

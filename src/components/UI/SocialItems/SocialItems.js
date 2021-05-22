@@ -1,6 +1,6 @@
 import React from "react";
 
-import { IconButton } from "@material-ui/core";
+import { Box, IconButton } from "@material-ui/core";
 import { GitHub, LinkedIn, Facebook, Instagram} from "@material-ui/icons";
 
 import { portfolio } from "../../../portfolio-manifest.json";
@@ -9,7 +9,7 @@ import styles from "./SocialItems.module.css";
 
 function SocialItems() {
   return (
-    <div className={styles.SocialItems}>
+    <Box className={styles.SocialItems}>
       <IconButton
         color="primary"
         aria-label="Github Link"
@@ -38,7 +38,7 @@ function SocialItems() {
       >
         <Instagram fontSize="large" />
       </IconButton>
-    </div>
+    </Box>
   );
 }
 

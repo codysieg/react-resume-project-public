@@ -6,20 +6,32 @@ import reportWebVitals from "./reportWebVitals";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
+const defaultTheme = createMuiTheme();
+
 const theme = createMuiTheme({
   palette: {
     primary: {
-        main: '#FFF'
+      main: "#FFF",
     },
     secondary: {
-        main: '#000'
-    }
-  }
+      main: "#000",
+    },
+  },
+  typography: {
+    h1: {
+      [defaultTheme.breakpoints.down("lg")]: {
+        fontSize: "50px",
+      },
+      [defaultTheme.breakpoints.up("lg")]: {
+        fontSize: "72px",
+      },
+    },
+  },
 });
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <App />
+    <App theme={theme}/>
   </ThemeProvider>,
   document.getElementById("root")
 );

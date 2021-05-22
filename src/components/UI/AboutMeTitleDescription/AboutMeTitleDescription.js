@@ -1,30 +1,32 @@
 import React from "react";
 
+import { Box } from "@material-ui/core";
+
 import classes from "./AboutMeTitleDescription.module.css";
 
 function AboutMeTitleDescription(props) {
   let CSSClasses = [];
   CSSClasses.push(props.isMobile ? "isMobile" : null);
   return (
-    <div className={classes.AboutMeTitleDescription}>
-      <div className={classes.AboutTitle}>{props.title}</div>
-      <div className={classes.AboutBody}>
+    <Box className={classes.AboutMeTitleDescription}>
+      <Box className={classes.AboutTitle}>{props.title}</Box>
+      <Box className={classes.AboutBody}>
         {props.title === "About Me" ? (
           <React.Fragment>
-            <div>{props.body}</div>
+            <Box>{props.body}</Box>
           </React.Fragment>
         ) : (
           <React.Fragment>
-            <div>{props.name}</div>
-            <div>{props.location}</div>
-            <div>{props.phoneNumber}</div>
-            <div>
+            <Box>{props.name}</Box>
+            <Box>{props.location}</Box>
+            <Box>{props.phoneNumber}</Box>
+            <Box>
               <a href={"mailto:" + props.emailAddress}>{props.emailAddress}</a>
-            </div>
+            </Box>
           </React.Fragment>
         )}
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

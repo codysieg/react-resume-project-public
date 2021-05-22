@@ -2,26 +2,28 @@ import React from "react";
 
 import { portfolio } from "../../portfolio-manifest.json";
 
+import { Box } from "@material-ui/core";
+
 import classes from "./Resume.module.css";
 
 import WorkExperienceCard from "../UI/WorkExperienceCard/WorkExperienceCard";
 
 function Resume(props) {
   return (
-    <div className={classes.Resume} id="resume">
-      <div className={props.isMobile ? classes.ResumeWrapperMobile : classes.ResumeWrapperDesktop}>
-        <div className={classes.ResumeWrapperTitle}>Education</div>
-        <div className={classes.ResumeWrapperBody}>
+    <Box className={classes.Resume} id="resume">
+      <Box className={props.isMobile ? classes.ResumeWrapperMobile : classes.ResumeWrapperDesktop}>
+        <Box className={classes.ResumeWrapperTitle}>Education</Box>
+        <Box className={classes.ResumeWrapperBody}>
           <WorkExperienceCard resumeData={portfolio.resume.education} />
-        </div>
-      </div>
-      <div className={props.isMobile ? classes.ResumeWrapperMobile : classes.ResumeWrapperDesktop}>
-        <div className={classes.ResumeWrapperTitle}>Work</div>
-        <div className={classes.ResumeWrapperBody}>
+        </Box>
+      </Box>
+      <Box className={props.isMobile ? classes.ResumeWrapperMobile : classes.ResumeWrapperDesktop}>
+        <Box className={classes.ResumeWrapperTitle}>Work</Box>
+        <Box className={classes.ResumeWrapperBody}>
           <WorkExperienceCard resumeData={portfolio.resume.work} />
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

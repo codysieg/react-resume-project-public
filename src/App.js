@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import styles from "./App.module.css";
-
 import Navbar from "./components/NavBar/NavBar";
 import LandingPage from "./components/LandingPage/LandingPage";
 import About from "./components/About/About";
@@ -9,35 +7,25 @@ import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
 import ContactNoForm from "./components/Contact/ContactNoForm";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/UI/ScrollToTop/ScrollToTop";
 
 import { portfolio } from "./portfolio-manifest.json";
 
-import { createMuiTheme } from "@material-ui/core/styles";
+import { Box, Fab } from "@material-ui/core";
 
-const defaultTheme = createMuiTheme();
+import { makeStyles } from "@material-ui/core/styles";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#FFF",
-    },
-    secondary: {
-      main: "#000",
-    },
-  },
-  typography: {
-    h1: {
-      [defaultTheme.breakpoints.down("lg")]: {
-        fontSize: "50px",
-      },
-      [defaultTheme.breakpoints.up("lg")]: {
-        fontSize: "72px",
-      },
-    },
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+
+const useStyles = makeStyles({
+  App: {
+    height: "100%",
   },
 });
 
-const App = () => {
+const App = (props) => {
+  const classes = useStyles();
+
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
@@ -68,19 +56,24 @@ const App = () => {
   };
 
   return (
-    <div className={styles.App}>
+    <Box className={classes.App}>
       <Navbar
         mobileView={mobileView}
         drawerOpen={drawerOpen}
         handleDrawerOpen={handleDrawerOpen}
         handleDrawerClose={handleDrawerClose}
       />
-      <LandingPage isMobile={mobileView} theme={theme} />
+      <LandingPage isMobile={mobileView} theme={props.theme} />
       <About mobileView={mobileView} />
       <Resume isMobile={mobileView} />
       {portfolio.display_email_form ? <Contact /> : <ContactNoForm />}
       <Footer />
-    </div>
+      <ScrollToTop {...props}>
+        <Fab color="secondary" size="medium" aria-label="scroll back to the top of the page">
+          <KeyboardArrowUpIcon color="primary"/>
+        </Fab>
+      </ScrollToTop>
+    </Box>
   );
 };
 
