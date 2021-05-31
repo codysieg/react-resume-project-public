@@ -81,6 +81,104 @@
                     }
                 ]
             ]
-        }
+        },
+        "projects": [
+            {
+                "name": "react",
+                "description": "Build blazing fast, modern apps and websites with React",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "react-portfolio",
+                "description": "A portfolio built out for developers",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "lorem ipsum project",
+                "description": "Et dolore magna aliqua",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "unnamed project",
+                "description": "Sollicitudin tempor id eu nisl nunc",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "another unnamed project",
+                "description": "Amet cursus sit amet dictum",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "no name project",
+                "description": "Pulvinar mattis nunc sed blandit",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "unknown project",
+                "description": "Vitae elementum curabitur vitae",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            },
+            {
+                "name": "boilerplate-project",
+                "description": "Ut porttitor leo a diam sollicitudin.",
+                "image_preview": "",
+                "project_link": "https://www.google.ca",
+                "technologies": [
+                    "CSS",
+                    "Typescript",
+                    "Javascript",
+                    "React"
+                ]
+            }
+        ]
     }
 }

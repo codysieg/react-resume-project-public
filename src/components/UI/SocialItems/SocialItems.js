@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Box, IconButton } from "@material-ui/core";
-import { GitHub, LinkedIn, Facebook, Instagram} from "@material-ui/icons";
+import { GitHub, LinkedIn, Facebook, Instagram } from "@material-ui/icons";
 
 import { portfolio } from "../../../portfolio-manifest.json";
 
