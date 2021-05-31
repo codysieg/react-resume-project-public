@@ -3,30 +3,29 @@ import React from "react";
 import { portfolio } from "../../portfolio-manifest.json";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box, Paper, Typography } from "@material-ui/core";
 
-import { GridList, GridListTile, GridListTileBar } from "@material-ui/core";
+import {
+  Box,
+  GridList,
+  GridListTile,
+  GridListTileBar,
+  Link,
+  IconButton,
+  Typography,
+} from "@material-ui/core";
+
+import LinkIcon from "@material-ui/icons/Link";
 
 import styles from "./Resume.module.css";
 
 import WorkExperienceCard from "../UI/WorkExperienceCard/WorkExperienceCard";
 
 const useStyles = makeStyles((theme) => ({
-  GridContainer: {
+  gridContainer: {
     width: "70%",
     margin: "0 auto",
     paddingTop: "50px",
     paddingBottom: "50px",
-  },
-
-  paper: {
-    height: 300,
-    width: 400,
-    margin: "0 auto",
-    backgroundColor: theme.palette.primary.dark,
-    "&:hover": {
-      cursor: "pointer",
-    },
   },
 }));
 
@@ -34,57 +33,61 @@ function Resume(props) {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Box className={classes.Resume} id="resume">
+      <Box className={styles.Resume} id="resume">
         <Box
           className={
             props.isMobile
-              ? classes.ResumeWrapperMobile
-              : classes.ResumeWrapperDesktop
+              ? styles.ResumeWrapperMobile
+              : styles.ResumeWrapperDesktop
           }
         >
-          <Box className={classes.ResumeWrapperTitle}>Education</Box>
-          <Box className={classes.ResumeWrapperBody}>
+          <Box className={styles.ResumeWrapperTitle}>Education</Box>
+          <Box className={styles.ResumeWrapperBody}>
             <WorkExperienceCard resumeData={portfolio.resume.education} />
           </Box>
         </Box>
         <Box
           className={
             props.isMobile
-              ? classes.ResumeWrapperMobile
-              : classes.ResumeWrapperDesktop
+              ? styles.ResumeWrapperMobile
+              : styles.ResumeWrapperDesktop
           }
         >
-          <Box className={classes.ResumeWrapperTitle}>Work</Box>
-          <Box className={classes.ResumeWrapperBody}>
+          <Box className={styles.ResumeWrapperTitle}>Work</Box>
+          <Box className={styles.ResumeWrapperBody}>
             <WorkExperienceCard resumeData={portfolio.resume.work} />
           </Box>
         </Box>
       </Box>
 
-      {/* Projects Test with Grid Layout */}
-      <Box className={classes.GridContainer}>
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={2}
-        >
+      <Box className={classes.gridContainer}>
+        <Typography variant="h4" gutterBottom="true">
+          Projects
+        </Typography>
+        <GridList spacing={6} cellHeight={300} className={classes.gridList}>
           {portfolio.projects.map((project) => {
             return (
-              <Grid item xs>
-                <Paper
-                  elevation={3}
-                  variant="outlined"
-                  className={classes.paper}
-                >
-                  <Typography>{project.name}</Typography>
-                  <Typography>{project.description}</Typography>
-                </Paper>
-              </Grid>
+              <GridListTile
+                cols={!props.isMobile ? 1 : 2}
+                key={project.image_preview}
+                styles
+              >
+                <img src={project.image_preview} alt={project.description} />
+                <GridListTileBar
+                  title={project.name}
+                  subtitle={`${project.description}`}
+                  actionIcon={
+                    <IconButton aria-label={`info about ${project.name}`}>
+                      <Link href={project.project_link}>
+                        <LinkIcon />
+                      </Link>
+                    </IconButton>
+                  }
+                />
+              </GridListTile>
             );
           })}
-        </Grid>
+        </GridList>
       </Box>
     </React.Fragment>
   );

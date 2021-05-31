@@ -86,98 +86,50 @@
             {
                 "name": "react",
                 "description": "Build blazing fast, modern apps and websites with React",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-one.png",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "react-portfolio",
                 "description": "A portfolio built out for developers",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-two.jpg",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "lorem ipsum project",
                 "description": "Et dolore magna aliqua",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-three.jpg",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "unnamed project",
                 "description": "Sollicitudin tempor id eu nisl nunc",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-four.jpg",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "another unnamed project",
                 "description": "Amet cursus sit amet dictum",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-five.png",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "no name project",
                 "description": "Pulvinar mattis nunc sed blandit",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-six.jpg",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "unknown project",
                 "description": "Vitae elementum curabitur vitae",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-seven.png",
+                "project_link": "https://www.github.com"
             },
             {
                 "name": "boilerplate-project",
                 "description": "Ut porttitor leo a diam sollicitudin.",
-                "image_preview": "",
-                "project_link": "https://www.google.ca",
-                "technologies": [
-                    "CSS",
-                    "Typescript",
-                    "Javascript",
-                    "React"
-                ]
+                "image_preview": "/images/project-image-eight.jpg",
+                "project_link": "https://www.github.com"
             }
         ]
     }
