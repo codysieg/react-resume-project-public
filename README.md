@@ -3,7 +3,7 @@
 ![Image of The Portfolio Landing Page](./sharex-portfolio.png)
 
 ## Live Demonstration
-You can view a live demonstration of the React Portfolio Website [here](https://react-resume-project-public.herokuapp.com/).
+You can view a live demonstration of the React Portfolio Website [here](https://master.dqu8x0o288jqs.amplifyapp.com/).
 
 ## Description
 This project was built originally as a personal online resume with no intention to ever build something open source out of it. But once I started developing it further and further, I started implementing features into the project so that someone could pick it up easily, clone it, mess around with the JSON configuration file to upload their own information and right away have a great looking portfolio page. 
