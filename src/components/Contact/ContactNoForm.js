@@ -17,9 +17,6 @@ function ContactNoForm() {
             fontSize: "80px",
           }}
         />
-        <Box className={classes.ContactMeDescription}>
-          {portfolio.contact_me_description}
-        </Box>
         <Box className={classes.ContactNoFormLink}>
           <Typography>
             <Link

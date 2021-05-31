@@ -1,7 +1,5 @@
 import React, { useState, useRef } from "react";
 
-import { portfolio } from "../../portfolio-manifest.json";
-
 import ReCAPTCHA from "react-google-recaptcha";
 
 import axios from "axios";
@@ -180,9 +178,6 @@ function Contact() {
             fontSize: "80px",
           }}
         />
-        <Box className={classes.ContactMeDescription}>
-          {portfolio.contact_me_description}
-        </Box>
         <form noValidate autoComplete="off">
           <TextField
             required
