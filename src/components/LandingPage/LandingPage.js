@@ -6,7 +6,7 @@ import { portfolio } from "../../portfolio-manifest.json";
 
 import styles from "./LandingPage.module.css";
 
-import { Typography, Box, Fade } from "@material-ui/core";
+import { CardContent, Card, Typography, Box, Fade } from "@material-ui/core";
 
 import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
 
@@ -16,6 +16,16 @@ const useStyles = makeStyles({
     paddingBottom: "30px",
     color: "#FFF",
   },
+  card: {
+    flex: '20% 0',
+    backgroundColor: "rgb(0, 0, 0, 0.6)",
+    color: "#FFF",
+    borderRadius: "30px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    padding: "30px",
+    minWidth: "350px",
+  }
 });
 
 const LandingPage = (props) => {
@@ -25,16 +35,14 @@ const LandingPage = (props) => {
     <Fade in timeout={2000}>
       <Box className={styles.LandingPage} id="home">
         <ThemeProvider theme={props.theme}>
-          <Typography variant="h1" align="center" className={classes.name}>
-            {portfolio.landingpage_title}
-          </Typography>
-          <Typography
-            variant="h6"
-            align="center"
-            style={{ fontSize: props.isMobile ? "16px" : "18px" }}
-            className={classes.Description}
-          ></Typography>
+        <Card className={classes.card}>
+          <CardContent>
+            <Typography variant="h1" align="center" className={classes.name}>
+              {portfolio.landingpage_title}
+            </Typography>
+          </CardContent>
           <SocialItems />
+        </Card>
         </ThemeProvider>
       </Box>
     </Fade>
