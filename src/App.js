@@ -9,6 +9,8 @@ import ContactNoForm from "./components/Contact/ContactNoForm";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/UI/ScrollToTop/ScrollToTop";
 
+import Loader from "react-loader-spinner";
+
 import { portfolio } from "./portfolio-manifest.json";
 
 import { Box, Fab } from "@material-ui/core";
@@ -20,6 +22,14 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 const useStyles = makeStyles({
   App: {
     height: "100%",
+    backgroundColor: '#000'
+  },
+  Loader: {
+    height: "100%",
+    backgroundColor: "#000",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 
@@ -30,6 +40,8 @@ const App = (props) => {
     mobileView: false,
     drawerOpen: false,
   });
+
+  const [loading, setLoading] = useState(true);
 
   const { mobileView, drawerOpen } = state;
 
@@ -44,6 +56,11 @@ const App = (props) => {
           }));
     };
     setResponsiveness(); //Fire on load
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
     window.addEventListener("resize", () => setResponsiveness()); //Event listener on page resize
   }, []);
 
@@ -55,7 +72,11 @@ const App = (props) => {
     setState((prevState) => ({ ...prevState, drawerOpen: false }));
   };
 
-  return (
+  return loading ? (
+    <Box className={classes.Loader}>
+      <Loader type="ThreeDots" color="#FFF" height={80} width={80} />
+    </Box>
+  ) : (
     <Box className={classes.App}>
       <Navbar
         mobileView={mobileView}
@@ -69,8 +90,12 @@ const App = (props) => {
       {portfolio.display_email_form ? <Contact /> : <ContactNoForm />}
       <Footer />
       <ScrollToTop {...props}>
-        <Fab color="secondary" size="medium" aria-label="scroll back to the top of the page">
-          <KeyboardArrowUpIcon color="primary"/>
+        <Fab
+          color="secondary"
+          size="medium"
+          aria-label="scroll back to the top of the page"
+        >
+          <KeyboardArrowUpIcon color="primary" />
         </Fab>
       </ScrollToTop>
     </Box>
